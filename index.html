@@ -17,10 +17,13 @@
     </a-assets>
     <a-entity environment="preset: forest;" ></a-entity>
 
-    <a-entity id="box" geometry="primitive: box" material="color: white"></a-entity>
-    <a-box position="0 2 0" rotation="0 45 45" scale="2 4 2">
-    <a-sphere position="1 0 3"></a-sphere>
-  </a-box>
+    <a-entity id="box" geometry="primitive: box" position="0 0 -4" material="color: white"></a-entity>
+    <a-box position="0 2 -5" rotation="0 45 45" scale="2 4 2">
+      <a-sphere position="1 0 3"></a-sphere>
+    </a-box>
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
   </a-scene>
 
 </body>
