@@ -17,14 +17,14 @@
     </a-assets>
     <a-entity environment="preset: forest;" ></a-entity>
 
-    <a-entity id="box" geometry="primitive: box" position="0 0 -4" material="color: white"></a-entity>
-    <a-box position="0 2 -5" rotation="0 45 45" scale="2 4 2">
-      <a-sphere position="1 0 3"></a-sphere>
-    </a-box>
+      <a-sphere id="sphere" position="-.59 3.5 -5" radius="0.87" scale="0.45 0.85 0.35">
+        <a-animation color begin="mouseenter" attribute="color" from="#1ABC9C" to="#E74C3C" dur="2300"></a-animation>
+      <a-animation begin="mouseleave" attribute="color" from="#E74C3C" to="#1ABC9C" dur="1500"></a-animation>
+      </a-sphere>
     <a-camera>
       <a-cursor></a-cursor>
     </a-camera>
   </a-scene>
 
-</body>
+ </body>
 </html>
